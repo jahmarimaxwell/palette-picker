@@ -1,0 +1,276 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Jahmari's CSS */
+
+#palette-picker-heading {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+#new-palette-form {
+  background-color: #7F7E7E;
+  position: relative;
+  margin-top: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* flex properties for form */
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-evenly;
+
+  align-items: center;
+  width: 450px;
+  height: 550px;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+section {
+  display: flex;
+  background-color: white;
+}
+
+#palette-form-heading {
+  margin: 15px;
+  font-size: 40px;
+}
+
+/* removes border from temperature options */
+fieldset {
+  border: 0px;
+}
+
+#palette-title {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: stretch;
+}
+#colors-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+}
+
+#palette-submit-button {
+  margin: 10px;
+}
+
+#made-palette-header {
+  font-size: 60px;
+  margin-left: 50px;
+}
+
+#big-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+li#card-list{
+  display: block;
+  align-content: center;
+  width: 100%;
+  /* spread the list's area to the whole card container */
+}
+
+.card-container {
+  display: flex;
+  background-color: gray;
+  height: auto;
+  width: auto;
+  justify-content: space-around;
+  border-radius: 35px;
+  margin: 20px;
+  padding: 10px;
+}
+
+#title-container {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+}
+
+#body-container {
+  display: flex;
+  justify-content: center;
+}
+
+#palette-color-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin: 5px;
+  align-items: center;
+}
+#single-color-container {
+  display: flex;
+  justify-content: center;
+  background: repeating-linear-gradient(black, black 49.9%, white 50.1%, white 100%);
+  margin: 10px;
+  width: 200px;
+  height: 75px;
+  align-items: center;
+}
+#color {
+  margin: 5px;
+  width: 150px;
+  height: 60px;
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+}
+#color-div-text {
+  width: 100%;
+  font-size: 18px;
+}
+#delete-button {
+  font-size: 18px;
+}
+#hex-container {
+  display: flex;
+  width: 100%;
+  margin: 5px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#hex {
+    display: flex;
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-color: black;
+    width: 150px;
+    height: 60px;
+    border-radius: 25px;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+#delete-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#temperature-container {
+  text-align: center;
+}
+
+/* Making sure every container within palette is Centered */

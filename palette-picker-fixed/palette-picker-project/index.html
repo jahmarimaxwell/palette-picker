@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Palette Picker</title>
+</head>
+
+<body>
+  <main>
+    <h1 id="palette-picker-heading">Palette Picker</h1>
+    <form action="" id="new-palette-form" aria-labelledby="form-heading">
+      <h2 id="palette-form-heading">Add a pallette</h2>
+      <label for="palette-title">Palette Title:</label>
+      <input type="text" id="palette-title" class="paletteTitle" name="paletteName" placeholder="" />
+      <!-- color inputs for the palette picker form -->
+      <div id="colors-container">
+        <label for="color1">Color #1</label>
+        <input type="color" id="color1" value="#ff0000"><br><br>
+        <label for="color2">Color: #2</label>
+        <input type="color" id="color2" value="#ff0000"><br><br>
+        <label for="color3">Color: #3</label>
+        <input type="color" id="color3" value="#ff0000"><br><br>
+      </div>
+      <!-- radio buttons for palette picker form-->
+      <fieldset>
+        <legend>Temperature</legend>
+        <input type="radio" value="warm" id="warm" />
+        <label for="warm">Warm</label>
+        <input type="radio" value="neutral" id="neutral" name="temperature" checked />
+        <label for="neutral">Neutral</label>
+        <input type="radio" value="cool" id="cool" name="temperature" />
+        <label for="cool">Cool</label>
+      </fieldset>
+      <button type="submit" id="palette-submit-button">Create the palette</button>
+      </fieldset>
+    </form>
+    <h2 id="made-palette-header">Palettes</h2>
+    <div id="big-card-container"></div>
+
+    </div>
+    <script type="module" src="./main.js"></script>
+  </main>
+</body>
+
+</html>
