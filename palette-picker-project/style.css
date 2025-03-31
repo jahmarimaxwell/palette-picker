@@ -13,26 +13,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-main {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
+html, main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  margin: 10px;
 }
 
 a {
@@ -103,13 +98,17 @@ button:focus-visible {
 }
 
 /* Jahmari's CSS */
+#make-palette {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 #palette-picker-heading {
   display: block;
   position: relative;
   width: 100%;
-  margin-top: 30px;
-  margin-left: 50px;
+  margin: 40px;
 }
 
 #new-palette-form {
@@ -127,7 +126,6 @@ button:focus-visible {
 
   align-items: center;
   width: 450px;
-  height: 550px;
   border-radius: 25px;
   padding: 20px;
 }
@@ -153,12 +151,17 @@ fieldset {
   flex-direction: column;
   align-items: stretch;
 }
+
 #colors-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  height: 250px;
+}
+
+#color1, #color2, #color3 {
+  width: 200px;
+  height: 40px;
 }
 
 #palette-submit-button {
@@ -274,3 +277,21 @@ li#card-list{
 }
 
 /* Making sure every container within palette is Centered */
+
+@media (max-width: 480px) {
+  #new-palette-form {
+    width: 100%;
+  }
+
+  #big-card-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+}
