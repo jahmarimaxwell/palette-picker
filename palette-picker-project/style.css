@@ -12,41 +12,42 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* VERY cool looking background */
-  /* --s: 140px; /* control the size */
-  /* --c: #170409; /* first color */
-  
-  /* --_g: #0000 52%,var(--c) 54% 57%,#0000 59%;
-  background: 
-   radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
-   radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
-   radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
-   radial-gradient(farthest-side at 50% -33.33%,var(--_g)), */
-   /* #67917A; /* second color */
-  /* background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667); */
-
-  /* Creates Spiraling Effect */
-  /* background-size: 30px 30px;
-  transition: opacity 0.3s ease;
-  background-image: linear-gradient(45deg, #ccc, 25%, transparent 25%, transparent 50%, #ccc, 50%, #ccc, 75%, transparent 75%, transparent);
-  animation: barberpole 0.5s linear infinite; */
-  
-  background: linear-gradient(
-    to bottom,
-    red, orange, yellow, green, blue, indigo, violet, red
-  );
-
-  background-size: 100% 200%;
-  animation: waterfall 10s linear infinite;
+  animation: rotate-bg-color 30s infinite;
 }
 
-/* Waterfall animation */
-@keyframes waterfall {
-  from {
-    background-position: 0 0;
+@keyframes rotate-bg-color {
+  0% {
+    background-color: steelblue;
   }
-  to {
-    background-position: 0 100%;
+  10% {
+    background-color: red;
+  }
+  20% {
+    background-color: orange;
+  }
+  30% {
+    background-color: yellow;
+  }
+  40% {
+    background-color: green;
+  }
+  50% {
+    background-color: blue;
+  }
+  60% {
+    background-color: indigo;
+  }
+  70% {
+    background-color: violet;
+  }
+  80% {
+    background-color: pink;
+  }
+  90% {
+    background-color: brown;
+  }
+  100% {
+    background-color: black;
   }
 }
 
