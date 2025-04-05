@@ -20,9 +20,12 @@ export const makePaletteCard = (palettes) => {
     const cardLi = document.createElement("li");
     cardLi.setAttribute("id", "card-list");
 
+    const strong = document.createElement("strong");
+    strong.textContent = title; 
+
     const titleContainer = document.createElement("p");
     titleContainer.setAttribute("id", "title-container");
-    titleContainer.textContent = title;
+    titleContainer.appendChild(strong); // emphasizes text
 
     const colorContainer = document.createElement("div");
     colorContainer.setAttribute("id", "palette-color-container");

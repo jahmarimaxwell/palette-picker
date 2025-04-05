@@ -88,6 +88,10 @@ body {
   margin: 10px;
 }
 
+p,label, #palette-form-heading {
+  color: black;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -155,6 +159,7 @@ button:focus-visible {
   }
 }
 
+
 /* Palette Picker CSS */
 #make-palette {
   display: flex;
@@ -189,7 +194,8 @@ button:focus-visible {
   margin: 50px;
   border: solid black 3px;
 
-  background: rgba(0,0,0,0.8);
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
 }
 
 section {
@@ -264,7 +270,8 @@ li#card-list{
   margin: 50px;
   padding: 10px;
   border: solid black 3px;
-  background: rgba(0,0,0,0.8);
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
