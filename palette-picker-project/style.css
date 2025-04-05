@@ -188,6 +188,8 @@ button:focus-visible {
   padding: 20px;
   margin: 50px;
   border: solid black 3px;
+
+  background: rgba(0,0,0,0.8);
 }
 
 section {
@@ -262,7 +264,16 @@ li#card-list{
   margin: 50px;
   padding: 10px;
   border: solid black 3px;
+  background: rgba(0,0,0,0.8);
 }
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  #new-palette-form, .card-container {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
 
 #title-container {
   text-align: center;
